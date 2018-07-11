@@ -6,7 +6,20 @@
           <div class="column">
             <div class="has-text-centered">
               <a class="button is-primary" @click="play()">Play again</a>
+              <router-link to="/" class="button is-outlined">Change difficulty</router-link>
             </div>
+          </div>
+        </div>
+        <div class="columns has-text-centered">
+          <div class="column">
+            <a class="button is-link is-small" @click='articlesShown = true' v-if="!articlesShown">See the articles you located</a>
+            <a class="button is-link is-small" v-if="articlesShown"  @click='articlesShown = false'>Hide the articles you located</a>
+            <table class="table is-striped is-fullwidth table-scores" v-if="articlesShown">
+              <tr v-for="question in $route.params.questions">
+                <td> <a :href="'http://eventregistry.org/event/' + question.uri" target="_blank">{{ question.title }}</a> </td>
+                <td> {{ question.location }}</td>
+              </tr>
+            </table>
           </div>
         </div>
         <div class="columns">
@@ -70,6 +83,7 @@ export default {
     return {
       scores: {},
       username: "",
+      articlesShown: false,
       username_changed: false
     }
   },

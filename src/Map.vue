@@ -189,6 +189,7 @@
               window.instance.post("send_score", {points: self.score, token: self.token}).then(response => {
                 self.$router.push({ name: 'ranking', 
                                     params: {
+                                      questions: self.questions,
                                       score: self.score,
                                       difficulty: self.difficulty, 
                                       score_id: response.data.score_id, 
