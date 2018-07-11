@@ -51,7 +51,7 @@
     <footer class="footer">
       <div class="content has-text-centered">
         <p>
-          A game by <a href="https://nkb.fr" target="_blank">Nicolas Kayser-Bril</a> using data from <a href="http://eventregistry.org" target="_blank">EventRegistry</a>.
+          A game by <a href="http://nkb.fr" target="_blank">Nicolas Kayser-Bril</a> using data from <a href="http://eventregistry.org" target="_blank">EventRegistry</a>.
         </p>
         <p>
           <a href="https://github.com/n-kb/news-geochallenge/" target="_blank">Still ♥ Github</a>.
