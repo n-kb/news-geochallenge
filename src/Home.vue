@@ -31,6 +31,9 @@
               <p>
                 You will be shown headlines from the past month. Click on the map where the most important location of the story was. Harder difficulty levels bring in more points.
               </p>
+              <p>
+                New articles are added every hour!
+              </p>
             </div>
             <div class="column is-4 has-text-centered">
               <p>{{ texts.difficulty }}</p>
@@ -48,10 +51,10 @@
     <footer class="footer">
       <div class="content has-text-centered">
         <p>
-          A game by <a href="https://nkb.fr">Nicolas Kayser-Bril</a> using data from <a href="http://eventregistry.org">EventRegistry</a>.
+          A game by <a href="https://nkb.fr" target="_blank">Nicolas Kayser-Bril</a> using data from <a href="http://eventregistry.org" target="_blank">EventRegistry</a>.
         </p>
         <p>
-          Still ♥ Github.
+          <a href="https://github.com/n-kb/news-geochallenge/" target="_blank">Still ♥ Github</a>.
         </p>
       </div>
     </footer>
