@@ -31,21 +31,15 @@
         </div>
         <div class="columns" v-if="new_high_score">
           <div class="column">
-            <div class="field">
-              <div class="field-label is-normal">
-                <label class="label">Enter your name to save your high score!</label>
-              </div>
-              <div class="field-body">
-                <div class="field has-addons">
-                  <p class="control">
-                    <input class="input" type="text" maxlength=100 placeholder="your name" v-model="username" @keyup.enter="change_username()">
-                  </p>
-                  <div class="control">
-                    <a class="button is-info" @click="change_username()">
-                      Send
-                    </a>
-                  </div>
-                </div>
+            <label class="label">Enter your name to save your high score!</label>
+            <div class="field has-addons">
+              <p class="control">
+                <input class="input" type="text" maxlength=100 placeholder="your name" v-model="username" @keyup.enter="change_username()">
+              </p>
+              <div class="control">
+                <a class="button is-info" @click="change_username()">
+                  Send
+                </a>
               </div>
             </div>
           </div>
